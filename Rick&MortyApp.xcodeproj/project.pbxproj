@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABD6F211299AC7BE0006D5DB /* Rick_MortyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F210299AC7BE0006D5DB /* Rick_MortyAppApp.swift */; };
+		ABD6F215299AC7C00006D5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F214299AC7C00006D5DB /* Assets.xcassets */; };
+		ABD6F218299AC7C00006D5DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F217299AC7C00006D5DB /* Preview Assets.xcassets */; };
+		ABD6F220299AC8220006D5DB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABD6F21F299AC8220006D5DB /* Alamofire */; };
+		ABD6F223299AC84F0006D5DB /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = ABD6F222299AC84F0006D5DB /* Factory */; };
+		ABD6F23E299AC89B0006D5DB /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F228299AC89B0006D5DB /* CustomNavBarContainerView.swift */; };
+		ABD6F23F299AC89B0006D5DB /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F229299AC89B0006D5DB /* CustomNavView.swift */; };
+		ABD6F240299AC89B0006D5DB /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F22A299AC89B0006D5DB /* CustomNavBarView.swift */; };
+		ABD6F241299AC89B0006D5DB /* CharacterRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F22D299AC89B0006D5DB /* CharacterRemoteDataSource.swift */; };
+		ABD6F242299AC89B0006D5DB /* CharacterRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F22E299AC89B0006D5DB /* CharacterRemoteDataSourceImpl.swift */; };
+		ABD6F243299AC89B0006D5DB /* NetworkContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F230299AC89B0006D5DB /* NetworkContainer.swift */; };
+		ABD6F244299AC89B0006D5DB /* CharactersListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F232299AC89B0006D5DB /* CharactersListDto.swift */; };
+		ABD6F245299AC89B0006D5DB /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F235299AC89B0006D5DB /* CharacterRepository.swift */; };
+		ABD6F246299AC89B0006D5DB /* CharacterRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F236299AC89B0006D5DB /* CharacterRepositoryImpl.swift */; };
+		ABD6F247299AC89B0006D5DB /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F238299AC89B0006D5DB /* DataContainer.swift */; };
+		ABD6F248299AC89B0006D5DB /* UseCaseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F23C299AC89B0006D5DB /* UseCaseContainer.swift */; };
+		ABD6F249299AC89B0006D5DB /* GetCharatersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F23D299AC89B0006D5DB /* GetCharatersUseCase.swift */; };
+		ABD6F2C6299ACC990006D5DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F2C5299ACC990006D5DB /* ContentView.swift */; };
+		ABD6F2C8299ACCBD0006D5DB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F2C7299ACCBD0006D5DB /* MainViewModel.swift */; };
+		ABD6F304299ACE4C0006D5DB /* PulpDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2CF299ACE4C0006D5DB /* PulpDisplay-Light.ttf */; };
+		ABD6F305299ACE4C0006D5DB /* PulpDisplay-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D0299ACE4C0006D5DB /* PulpDisplay-ExtraLightItalic.ttf */; };
+		ABD6F306299ACE4C0006D5DB /* PulpDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D1299ACE4C0006D5DB /* PulpDisplay-MediumItalic.ttf */; };
+		ABD6F307299ACE4C0006D5DB /* PulpDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D2299ACE4C0006D5DB /* PulpDisplay-ExtraBold.ttf */; };
+		ABD6F308299ACE4C0006D5DB /* PulpDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D3299ACE4C0006D5DB /* PulpDisplay-BoldItalic.ttf */; };
+		ABD6F309299ACE4C0006D5DB /* PulpDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D4299ACE4C0006D5DB /* PulpDisplay-ExtraBoldItalic.ttf */; };
+		ABD6F30A299ACE4C0006D5DB /* PulpDisplay-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D5299ACE4C0006D5DB /* PulpDisplay-ExtraLight.ttf */; };
+		ABD6F30B299ACE4C0006D5DB /* PulpDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D6299ACE4C0006D5DB /* PulpDisplay-Medium.ttf */; };
+		ABD6F30C299ACE4C0006D5DB /* PulpDisplay-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D7299ACE4C0006D5DB /* PulpDisplay-RegularItalic.ttf */; };
+		ABD6F30D299ACE4C0006D5DB /* PulpDisplay-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D8299ACE4C0006D5DB /* PulpDisplay-LightItalic.ttf */; };
+		ABD6F30E299ACE4C0006D5DB /* PulpDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2D9299ACE4C0006D5DB /* PulpDisplay-Bold.ttf */; };
+		ABD6F30F299ACE4C0006D5DB /* PulpDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2DA299ACE4C0006D5DB /* PulpDisplay-Regular.ttf */; };
+		ABD6F310299ACE4C0006D5DB /* PulpDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2DB299ACE4C0006D5DB /* PulpDisplay-SemiBold.ttf */; };
+		ABD6F311299ACE4C0006D5DB /* PulpDisplay-Outline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2DC299ACE4C0006D5DB /* PulpDisplay-Outline.ttf */; };
+		ABD6F312299ACE4C0006D5DB /* PulpDisplay-OutlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2DD299ACE4C0006D5DB /* PulpDisplay-OutlineItalic.ttf */; };
+		ABD6F313299ACE4C0006D5DB /* PulpDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2DE299ACE4C0006D5DB /* PulpDisplay-SemiBoldItalic.ttf */; };
+		ABD6F314299ACE4C0006D5DB /* Neue - neue Singular H Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E0299ACE4C0006D5DB /* Neue - neue Singular H Regular.otf */; };
+		ABD6F315299ACE4C0006D5DB /* neueSingularHLightItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E1299ACE4C0006D5DB /* neueSingularHLightItalic.woff */; };
+		ABD6F316299ACE4C0006D5DB /* neueSingularHExtraBold.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E2299ACE4C0006D5DB /* neueSingularHExtraBold.woff */; };
+		ABD6F317299ACE4C0006D5DB /* neueSingularHBlack.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E3299ACE4C0006D5DB /* neueSingularHBlack.woff */; };
+		ABD6F318299ACE4C0006D5DB /* neueSingularHSemiBoldItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E4299ACE4C0006D5DB /* neueSingularHSemiBoldItalic.woff */; };
+		ABD6F319299ACE4C0006D5DB /* neueSingularHExtraLight.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E5299ACE4C0006D5DB /* neueSingularHExtraLight.woff */; };
+		ABD6F31A299ACE4C0006D5DB /* neueSingularHThin.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E6299ACE4C0006D5DB /* neueSingularHThin.woff */; };
+		ABD6F31B299ACE4C0006D5DB /* neueSingularHSemiBold.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E7299ACE4C0006D5DB /* neueSingularHSemiBold.woff */; };
+		ABD6F31C299ACE4C0006D5DB /* neueSingularHExtraLightItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E8299ACE4C0006D5DB /* neueSingularHExtraLightItalic.woff */; };
+		ABD6F31D299ACE4C0006D5DB /* neueSingularHLight.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2E9299ACE4C0006D5DB /* neueSingularHLight.woff */; };
+		ABD6F31E299ACE4C0006D5DB /* neueSingularHBold.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2EA299ACE4C0006D5DB /* neueSingularHBold.woff */; };
+		ABD6F31F299ACE4C0006D5DB /* neueSingularHBoldItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2EB299ACE4C0006D5DB /* neueSingularHBoldItalic.woff */; };
+		ABD6F320299ACE4C0006D5DB /* neueSingularHBlackItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2EC299ACE4C0006D5DB /* neueSingularHBlackItalic.woff */; };
+		ABD6F321299ACE4C0006D5DB /* neueSingularHExtraThin.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2ED299ACE4C0006D5DB /* neueSingularHExtraThin.woff */; };
+		ABD6F322299ACE4C0006D5DB /* neueSingularHMedium.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2EE299ACE4C0006D5DB /* neueSingularHMedium.woff */; };
+		ABD6F323299ACE4C0006D5DB /* neueSingularHExtraBoldItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2EF299ACE4C0006D5DB /* neueSingularHExtraBoldItalic.woff */; };
+		ABD6F324299ACE4C0006D5DB /* neueSingularHExtraThinItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2F0299ACE4C0006D5DB /* neueSingularHExtraThinItalic.woff */; };
+		ABD6F325299ACE4C0006D5DB /* neueSingularHMediumItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2F1299ACE4C0006D5DB /* neueSingularHMediumItalic.woff */; };
+		ABD6F326299ACE4C0006D5DB /* Neue - neue Singular H Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2F2299ACE4C0006D5DB /* Neue - neue Singular H Regular Italic.otf */; };
+		ABD6F327299ACE4C0006D5DB /* neueSingularHThinItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2F3299ACE4C0006D5DB /* neueSingularHThinItalic.woff */; };
+		ABD6F328299ACE4C0006D5DB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD6F2F4299ACE4C0006D5DB /* Fonts.swift */; };
+		ABD6F329299ACE4C0006D5DB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2F6299ACE4C0006D5DB /* Roboto-Medium.ttf */; };
+		ABD6F32A299ACE4C0006D5DB /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2F7299ACE4C0006D5DB /* Roboto-Light.ttf */; };
+		ABD6F32B299ACE4C0006D5DB /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2F8299ACE4C0006D5DB /* Roboto-Regular.ttf */; };
+		ABD6F32C299ACE4C0006D5DB /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2F9299ACE4C0006D5DB /* Roboto-MediumItalic.ttf */; };
+		ABD6F32D299ACE4C0006D5DB /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2FA299ACE4C0006D5DB /* Roboto-ThinItalic.ttf */; };
+		ABD6F32E299ACE4C0006D5DB /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2FB299ACE4C0006D5DB /* Roboto-BoldItalic.ttf */; };
+		ABD6F32F299ACE4C0006D5DB /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2FC299ACE4C0006D5DB /* Roboto-LightItalic.ttf */; };
+		ABD6F330299ACE4C0006D5DB /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2FD299ACE4C0006D5DB /* Roboto-Italic.ttf */; };
+		ABD6F331299ACE4C0006D5DB /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2FE299ACE4C0006D5DB /* Roboto-BlackItalic.ttf */; };
+		ABD6F332299ACE4C0006D5DB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F2FF299ACE4C0006D5DB /* Roboto-Bold.ttf */; };
+		ABD6F333299ACE4C0006D5DB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F300299ACE4C0006D5DB /* Roboto-Thin.ttf */; };
+		ABD6F334299ACE4C0006D5DB /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD6F301299ACE4C0006D5DB /* Roboto-Black.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ABD6F20D299AC7BE0006D5DB /* Rick&MortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick&MortyApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD6F210299AC7BE0006D5DB /* Rick_MortyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyAppApp.swift; sourceTree = "<group>"; };
+		ABD6F214299AC7C00006D5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABD6F217299AC7C00006D5DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABD6F228299AC89B0006D5DB /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
+		ABD6F229299AC89B0006D5DB /* CustomNavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
+		ABD6F22A299AC89B0006D5DB /* CustomNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
+		ABD6F22D299AC89B0006D5DB /* CharacterRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterRemoteDataSource.swift; sourceTree = "<group>"; };
+		ABD6F22E299AC89B0006D5DB /* CharacterRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		ABD6F230299AC89B0006D5DB /* NetworkContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkContainer.swift; sourceTree = "<group>"; };
+		ABD6F232299AC89B0006D5DB /* CharactersListDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListDto.swift; sourceTree = "<group>"; };
+		ABD6F235299AC89B0006D5DB /* CharacterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		ABD6F236299AC89B0006D5DB /* CharacterRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryImpl.swift; sourceTree = "<group>"; };
+		ABD6F238299AC89B0006D5DB /* DataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
+		ABD6F23C299AC89B0006D5DB /* UseCaseContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseContainer.swift; sourceTree = "<group>"; };
+		ABD6F23D299AC89B0006D5DB /* GetCharatersUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCharatersUseCase.swift; sourceTree = "<group>"; };
+		ABD6F2C5299ACC990006D5DB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABD6F2C7299ACCBD0006D5DB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		ABD6F2CF299ACE4C0006D5DB /* PulpDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-Light.ttf"; sourceTree = "<group>"; };
+		ABD6F2D0299ACE4C0006D5DB /* PulpDisplay-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2D1299ACE4C0006D5DB /* PulpDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2D2299ACE4C0006D5DB /* PulpDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		ABD6F2D3299ACE4C0006D5DB /* PulpDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2D4299ACE4C0006D5DB /* PulpDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2D5299ACE4C0006D5DB /* PulpDisplay-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-ExtraLight.ttf"; sourceTree = "<group>"; };
+		ABD6F2D6299ACE4C0006D5DB /* PulpDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		ABD6F2D7299ACE4C0006D5DB /* PulpDisplay-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-RegularItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2D8299ACE4C0006D5DB /* PulpDisplay-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-LightItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2D9299ACE4C0006D5DB /* PulpDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		ABD6F2DA299ACE4C0006D5DB /* PulpDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		ABD6F2DB299ACE4C0006D5DB /* PulpDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		ABD6F2DC299ACE4C0006D5DB /* PulpDisplay-Outline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-Outline.ttf"; sourceTree = "<group>"; };
+		ABD6F2DD299ACE4C0006D5DB /* PulpDisplay-OutlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-OutlineItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2DE299ACE4C0006D5DB /* PulpDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PulpDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2E0299ACE4C0006D5DB /* Neue - neue Singular H Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neue - neue Singular H Regular.otf"; sourceTree = "<group>"; };
+		ABD6F2E1299ACE4C0006D5DB /* neueSingularHLightItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHLightItalic.woff; sourceTree = "<group>"; };
+		ABD6F2E2299ACE4C0006D5DB /* neueSingularHExtraBold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHExtraBold.woff; sourceTree = "<group>"; };
+		ABD6F2E3299ACE4C0006D5DB /* neueSingularHBlack.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHBlack.woff; sourceTree = "<group>"; };
+		ABD6F2E4299ACE4C0006D5DB /* neueSingularHSemiBoldItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHSemiBoldItalic.woff; sourceTree = "<group>"; };
+		ABD6F2E5299ACE4C0006D5DB /* neueSingularHExtraLight.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHExtraLight.woff; sourceTree = "<group>"; };
+		ABD6F2E6299ACE4C0006D5DB /* neueSingularHThin.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHThin.woff; sourceTree = "<group>"; };
+		ABD6F2E7299ACE4C0006D5DB /* neueSingularHSemiBold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHSemiBold.woff; sourceTree = "<group>"; };
+		ABD6F2E8299ACE4C0006D5DB /* neueSingularHExtraLightItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHExtraLightItalic.woff; sourceTree = "<group>"; };
+		ABD6F2E9299ACE4C0006D5DB /* neueSingularHLight.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHLight.woff; sourceTree = "<group>"; };
+		ABD6F2EA299ACE4C0006D5DB /* neueSingularHBold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHBold.woff; sourceTree = "<group>"; };
+		ABD6F2EB299ACE4C0006D5DB /* neueSingularHBoldItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHBoldItalic.woff; sourceTree = "<group>"; };
+		ABD6F2EC299ACE4C0006D5DB /* neueSingularHBlackItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHBlackItalic.woff; sourceTree = "<group>"; };
+		ABD6F2ED299ACE4C0006D5DB /* neueSingularHExtraThin.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHExtraThin.woff; sourceTree = "<group>"; };
+		ABD6F2EE299ACE4C0006D5DB /* neueSingularHMedium.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHMedium.woff; sourceTree = "<group>"; };
+		ABD6F2EF299ACE4C0006D5DB /* neueSingularHExtraBoldItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHExtraBoldItalic.woff; sourceTree = "<group>"; };
+		ABD6F2F0299ACE4C0006D5DB /* neueSingularHExtraThinItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHExtraThinItalic.woff; sourceTree = "<group>"; };
+		ABD6F2F1299ACE4C0006D5DB /* neueSingularHMediumItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHMediumItalic.woff; sourceTree = "<group>"; };
+		ABD6F2F2299ACE4C0006D5DB /* Neue - neue Singular H Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neue - neue Singular H Regular Italic.otf"; sourceTree = "<group>"; };
+		ABD6F2F3299ACE4C0006D5DB /* neueSingularHThinItalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = neueSingularHThinItalic.woff; sourceTree = "<group>"; };
+		ABD6F2F4299ACE4C0006D5DB /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		ABD6F2F6299ACE4C0006D5DB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		ABD6F2F7299ACE4C0006D5DB /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		ABD6F2F8299ACE4C0006D5DB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		ABD6F2F9299ACE4C0006D5DB /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2FA299ACE4C0006D5DB /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2FB299ACE4C0006D5DB /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2FC299ACE4C0006D5DB /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2FD299ACE4C0006D5DB /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		ABD6F2FE299ACE4C0006D5DB /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		ABD6F2FF299ACE4C0006D5DB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		ABD6F300299ACE4C0006D5DB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		ABD6F301299ACE4C0006D5DB /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		ABD6F335299ACEEF0006D5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABD6F20A299AC7BE0006D5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD6F220299AC8220006D5DB /* Alamofire in Frameworks */,
+				ABD6F223299AC84F0006D5DB /* Factory in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABD6F204299AC7BE0006D5DB = {
+			isa = PBXGroup;
+			children = (
+				ABD6F20F299AC7BE0006D5DB /* Rick&MortyApp */,
+				ABD6F20E299AC7BE0006D5DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABD6F20E299AC7BE0006D5DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F20D299AC7BE0006D5DB /* Rick&MortyApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABD6F20F299AC7BE0006D5DB /* Rick&MortyApp */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F210299AC7BE0006D5DB /* Rick_MortyAppApp.swift */,
+				ABD6F214299AC7C00006D5DB /* Assets.xcassets */,
+				ABD6F2CB299ACE4C0006D5DB /* SupportingFile */,
+				ABD6F2C3299ACC990006D5DB /* Feature */,
+				ABD6F224299AC89B0006D5DB /* Core */,
+				ABD6F216299AC7C00006D5DB /* Preview Content */,
+			);
+			path = "Rick&MortyApp";
+			sourceTree = "<group>";
+		};
+		ABD6F216299AC7C00006D5DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F217299AC7C00006D5DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABD6F224299AC89B0006D5DB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F225299AC89B0006D5DB /* UI */,
+				ABD6F22B299AC89B0006D5DB /* Network */,
+				ABD6F233299AC89B0006D5DB /* Data */,
+				ABD6F23A299AC89B0006D5DB /* Domain */,
+			);
+			name = Core;
+			path = "../../../Downloads/TestApp-iOS/TestApp/Core";
+			sourceTree = "<group>";
+		};
+		ABD6F225299AC89B0006D5DB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F226299AC89B0006D5DB /* Extension */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ABD6F226299AC89B0006D5DB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F227299AC89B0006D5DB /* CustomNawVBar */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ABD6F227299AC89B0006D5DB /* CustomNawVBar */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F228299AC89B0006D5DB /* CustomNavBarContainerView.swift */,
+				ABD6F229299AC89B0006D5DB /* CustomNavView.swift */,
+				ABD6F22A299AC89B0006D5DB /* CustomNavBarView.swift */,
+			);
+			path = CustomNawVBar;
+			sourceTree = "<group>";
+		};
+		ABD6F22B299AC89B0006D5DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F22C299AC89B0006D5DB /* DataSources */,
+				ABD6F22F299AC89B0006D5DB /* DI */,
+				ABD6F231299AC89B0006D5DB /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ABD6F22C299AC89B0006D5DB /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F22D299AC89B0006D5DB /* CharacterRemoteDataSource.swift */,
+				ABD6F22E299AC89B0006D5DB /* CharacterRemoteDataSourceImpl.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		ABD6F22F299AC89B0006D5DB /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F230299AC89B0006D5DB /* NetworkContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		ABD6F231299AC89B0006D5DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F232299AC89B0006D5DB /* CharactersListDto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABD6F233299AC89B0006D5DB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F234299AC89B0006D5DB /* Repository */,
+				ABD6F237299AC89B0006D5DB /* DI */,
+				ABD6F239299AC89B0006D5DB /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ABD6F234299AC89B0006D5DB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F235299AC89B0006D5DB /* CharacterRepository.swift */,
+				ABD6F236299AC89B0006D5DB /* CharacterRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		ABD6F237299AC89B0006D5DB /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F238299AC89B0006D5DB /* DataContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		ABD6F239299AC89B0006D5DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABD6F23A299AC89B0006D5DB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F23B299AC89B0006D5DB /* DI */,
+				ABD6F23D299AC89B0006D5DB /* GetCharatersUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		ABD6F23B299AC89B0006D5DB /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F23C299AC89B0006D5DB /* UseCaseContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		ABD6F2C3299ACC990006D5DB /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F2C4299ACC990006D5DB /* Characters */,
+			);
+			name = Feature;
+			path = "../../../Downloads/TestApp-iOS/TestApp/Feature";
+			sourceTree = "<group>";
+		};
+		ABD6F2C4299ACC990006D5DB /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F2C5299ACC990006D5DB /* ContentView.swift */,
+				ABD6F2C7299ACCBD0006D5DB /* MainViewModel.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		ABD6F2CB299ACE4C0006D5DB /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F335299ACEEF0006D5DB /* Assets.xcassets */,
+				ABD6F2CD299ACE4C0006D5DB /* Fonts */,
+			);
+			name = SupportingFile;
+			path = "../../../Downloads/TestApp-iOS/TestApp/SupportingFile";
+			sourceTree = "<group>";
+		};
+		ABD6F2CD299ACE4C0006D5DB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F2CE299ACE4C0006D5DB /* Pulp-Display */,
+				ABD6F2DF299ACE4C0006D5DB /* Neue-Singular-H */,
+				ABD6F2F4299ACE4C0006D5DB /* Fonts.swift */,
+				ABD6F2F5299ACE4C0006D5DB /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		ABD6F2CE299ACE4C0006D5DB /* Pulp-Display */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F2CF299ACE4C0006D5DB /* PulpDisplay-Light.ttf */,
+				ABD6F2D0299ACE4C0006D5DB /* PulpDisplay-ExtraLightItalic.ttf */,
+				ABD6F2D1299ACE4C0006D5DB /* PulpDisplay-MediumItalic.ttf */,
+				ABD6F2D2299ACE4C0006D5DB /* PulpDisplay-ExtraBold.ttf */,
+				ABD6F2D3299ACE4C0006D5DB /* PulpDisplay-BoldItalic.ttf */,
+				ABD6F2D4299ACE4C0006D5DB /* PulpDisplay-ExtraBoldItalic.ttf */,
+				ABD6F2D5299ACE4C0006D5DB /* PulpDisplay-ExtraLight.ttf */,
+				ABD6F2D6299ACE4C0006D5DB /* PulpDisplay-Medium.ttf */,
+				ABD6F2D7299ACE4C0006D5DB /* PulpDisplay-RegularItalic.ttf */,
+				ABD6F2D8299ACE4C0006D5DB /* PulpDisplay-LightItalic.ttf */,
+				ABD6F2D9299ACE4C0006D5DB /* PulpDisplay-Bold.ttf */,
+				ABD6F2DA299ACE4C0006D5DB /* PulpDisplay-Regular.ttf */,
+				ABD6F2DB299ACE4C0006D5DB /* PulpDisplay-SemiBold.ttf */,
+				ABD6F2DC299ACE4C0006D5DB /* PulpDisplay-Outline.ttf */,
+				ABD6F2DD299ACE4C0006D5DB /* PulpDisplay-OutlineItalic.ttf */,
+				ABD6F2DE299ACE4C0006D5DB /* PulpDisplay-SemiBoldItalic.ttf */,
+			);
+			path = "Pulp-Display";
+			sourceTree = "<group>";
+		};
+		ABD6F2DF299ACE4C0006D5DB /* Neue-Singular-H */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F2E0299ACE4C0006D5DB /* Neue - neue Singular H Regular.otf */,
+				ABD6F2E1299ACE4C0006D5DB /* neueSingularHLightItalic.woff */,
+				ABD6F2E2299ACE4C0006D5DB /* neueSingularHExtraBold.woff */,
+				ABD6F2E3299ACE4C0006D5DB /* neueSingularHBlack.woff */,
+				ABD6F2E4299ACE4C0006D5DB /* neueSingularHSemiBoldItalic.woff */,
+				ABD6F2E5299ACE4C0006D5DB /* neueSingularHExtraLight.woff */,
+				ABD6F2E6299ACE4C0006D5DB /* neueSingularHThin.woff */,
+				ABD6F2E7299ACE4C0006D5DB /* neueSingularHSemiBold.woff */,
+				ABD6F2E8299ACE4C0006D5DB /* neueSingularHExtraLightItalic.woff */,
+				ABD6F2E9299ACE4C0006D5DB /* neueSingularHLight.woff */,
+				ABD6F2EA299ACE4C0006D5DB /* neueSingularHBold.woff */,
+				ABD6F2EB299ACE4C0006D5DB /* neueSingularHBoldItalic.woff */,
+				ABD6F2EC299ACE4C0006D5DB /* neueSingularHBlackItalic.woff */,
+				ABD6F2ED299ACE4C0006D5DB /* neueSingularHExtraThin.woff */,
+				ABD6F2EE299ACE4C0006D5DB /* neueSingularHMedium.woff */,
+				ABD6F2EF299ACE4C0006D5DB /* neueSingularHExtraBoldItalic.woff */,
+				ABD6F2F0299ACE4C0006D5DB /* neueSingularHExtraThinItalic.woff */,
+				ABD6F2F1299ACE4C0006D5DB /* neueSingularHMediumItalic.woff */,
+				ABD6F2F2299ACE4C0006D5DB /* Neue - neue Singular H Regular Italic.otf */,
+				ABD6F2F3299ACE4C0006D5DB /* neueSingularHThinItalic.woff */,
+			);
+			path = "Neue-Singular-H";
+			sourceTree = "<group>";
+		};
+		ABD6F2F5299ACE4C0006D5DB /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6F2F6299ACE4C0006D5DB /* Roboto-Medium.ttf */,
+				ABD6F2F7299ACE4C0006D5DB /* Roboto-Light.ttf */,
+				ABD6F2F8299ACE4C0006D5DB /* Roboto-Regular.ttf */,
+				ABD6F2F9299ACE4C0006D5DB /* Roboto-MediumItalic.ttf */,
+				ABD6F2FA299ACE4C0006D5DB /* Roboto-ThinItalic.ttf */,
+				ABD6F2FB299ACE4C0006D5DB /* Roboto-BoldItalic.ttf */,
+				ABD6F2FC299ACE4C0006D5DB /* Roboto-LightItalic.ttf */,
+				ABD6F2FD299ACE4C0006D5DB /* Roboto-Italic.ttf */,
+				ABD6F2FE299ACE4C0006D5DB /* Roboto-BlackItalic.ttf */,
+				ABD6F2FF299ACE4C0006D5DB /* Roboto-Bold.ttf */,
+				ABD6F300299ACE4C0006D5DB /* Roboto-Thin.ttf */,
+				ABD6F301299ACE4C0006D5DB /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABD6F20C299AC7BE0006D5DB /* Rick&MortyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD6F21B299AC7C00006D5DB /* Build configuration list for PBXNativeTarget "Rick&MortyApp" */;
+			buildPhases = (
+				ABD6F209299AC7BE0006D5DB /* Sources */,
+				ABD6F20A299AC7BE0006D5DB /* Frameworks */,
+				ABD6F20B299AC7BE0006D5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rick&MortyApp";
+			packageProductDependencies = (
+				ABD6F21F299AC8220006D5DB /* Alamofire */,
+				ABD6F222299AC84F0006D5DB /* Factory */,
+			);
+			productName = "Rick&MortyApp";
+			productReference = ABD6F20D299AC7BE0006D5DB /* Rick&MortyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABD6F205299AC7BE0006D5DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ABD6F20C299AC7BE0006D5DB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = ABD6F208299AC7BE0006D5DB /* Build configuration list for PBXProject "Rick&MortyApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABD6F204299AC7BE0006D5DB;
+			packageReferences = (
+				ABD6F21E299AC8220006D5DB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				ABD6F221299AC84F0006D5DB /* XCRemoteSwiftPackageReference "Factory" */,
+			);
+			productRefGroup = ABD6F20E299AC7BE0006D5DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABD6F20C299AC7BE0006D5DB /* Rick&MortyApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABD6F20B299AC7BE0006D5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD6F319299ACE4C0006D5DB /* neueSingularHExtraLight.woff in Resources */,
+				ABD6F325299ACE4C0006D5DB /* neueSingularHMediumItalic.woff in Resources */,
+				ABD6F333299ACE4C0006D5DB /* Roboto-Thin.ttf in Resources */,
+				ABD6F308299ACE4C0006D5DB /* PulpDisplay-BoldItalic.ttf in Resources */,
+				ABD6F310299ACE4C0006D5DB /* PulpDisplay-SemiBold.ttf in Resources */,
+				ABD6F31B299ACE4C0006D5DB /* neueSingularHSemiBold.woff in Resources */,
+				ABD6F30E299ACE4C0006D5DB /* PulpDisplay-Bold.ttf in Resources */,
+				ABD6F311299ACE4C0006D5DB /* PulpDisplay-Outline.ttf in Resources */,
+				ABD6F306299ACE4C0006D5DB /* PulpDisplay-MediumItalic.ttf in Resources */,
+				ABD6F32F299ACE4C0006D5DB /* Roboto-LightItalic.ttf in Resources */,
+				ABD6F309299ACE4C0006D5DB /* PulpDisplay-ExtraBoldItalic.ttf in Resources */,
+				ABD6F320299ACE4C0006D5DB /* neueSingularHBlackItalic.woff in Resources */,
+				ABD6F305299ACE4C0006D5DB /* PulpDisplay-ExtraLightItalic.ttf in Resources */,
+				ABD6F323299ACE4C0006D5DB /* neueSingularHExtraBoldItalic.woff in Resources */,
+				ABD6F322299ACE4C0006D5DB /* neueSingularHMedium.woff in Resources */,
+				ABD6F326299ACE4C0006D5DB /* Neue - neue Singular H Regular Italic.otf in Resources */,
+				ABD6F315299ACE4C0006D5DB /* neueSingularHLightItalic.woff in Resources */,
+				ABD6F32D299ACE4C0006D5DB /* Roboto-ThinItalic.ttf in Resources */,
+				ABD6F32E299ACE4C0006D5DB /* Roboto-BoldItalic.ttf in Resources */,
+				ABD6F313299ACE4C0006D5DB /* PulpDisplay-SemiBoldItalic.ttf in Resources */,
+				ABD6F30C299ACE4C0006D5DB /* PulpDisplay-RegularItalic.ttf in Resources */,
+				ABD6F218299AC7C00006D5DB /* Preview Assets.xcassets in Resources */,
+				ABD6F31F299ACE4C0006D5DB /* neueSingularHBoldItalic.woff in Resources */,
+				ABD6F31D299ACE4C0006D5DB /* neueSingularHLight.woff in Resources */,
+				ABD6F32C299ACE4C0006D5DB /* Roboto-MediumItalic.ttf in Resources */,
+				ABD6F314299ACE4C0006D5DB /* Neue - neue Singular H Regular.otf in Resources */,
+				ABD6F327299ACE4C0006D5DB /* neueSingularHThinItalic.woff in Resources */,
+				ABD6F324299ACE4C0006D5DB /* neueSingularHExtraThinItalic.woff in Resources */,
+				ABD6F317299ACE4C0006D5DB /* neueSingularHBlack.woff in Resources */,
+				ABD6F30F299ACE4C0006D5DB /* PulpDisplay-Regular.ttf in Resources */,
+				ABD6F30B299ACE4C0006D5DB /* PulpDisplay-Medium.ttf in Resources */,
+				ABD6F31A299ACE4C0006D5DB /* neueSingularHThin.woff in Resources */,
+				ABD6F316299ACE4C0006D5DB /* neueSingularHExtraBold.woff in Resources */,
+				ABD6F334299ACE4C0006D5DB /* Roboto-Black.ttf in Resources */,
+				ABD6F30A299ACE4C0006D5DB /* PulpDisplay-ExtraLight.ttf in Resources */,
+				ABD6F31C299ACE4C0006D5DB /* neueSingularHExtraLightItalic.woff in Resources */,
+				ABD6F32A299ACE4C0006D5DB /* Roboto-Light.ttf in Resources */,
+				ABD6F330299ACE4C0006D5DB /* Roboto-Italic.ttf in Resources */,
+				ABD6F331299ACE4C0006D5DB /* Roboto-BlackItalic.ttf in Resources */,
+				ABD6F32B299ACE4C0006D5DB /* Roboto-Regular.ttf in Resources */,
+				ABD6F304299ACE4C0006D5DB /* PulpDisplay-Light.ttf in Resources */,
+				ABD6F307299ACE4C0006D5DB /* PulpDisplay-ExtraBold.ttf in Resources */,
+				ABD6F332299ACE4C0006D5DB /* Roboto-Bold.ttf in Resources */,
+				ABD6F31E299ACE4C0006D5DB /* neueSingularHBold.woff in Resources */,
+				ABD6F329299ACE4C0006D5DB /* Roboto-Medium.ttf in Resources */,
+				ABD6F318299ACE4C0006D5DB /* neueSingularHSemiBoldItalic.woff in Resources */,
+				ABD6F312299ACE4C0006D5DB /* PulpDisplay-OutlineItalic.ttf in Resources */,
+				ABD6F215299AC7C00006D5DB /* Assets.xcassets in Resources */,
+				ABD6F321299ACE4C0006D5DB /* neueSingularHExtraThin.woff in Resources */,
+				ABD6F30D299ACE4C0006D5DB /* PulpDisplay-LightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABD6F209299AC7BE0006D5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD6F328299ACE4C0006D5DB /* Fonts.swift in Sources */,
+				ABD6F249299AC89B0006D5DB /* GetCharatersUseCase.swift in Sources */,
+				ABD6F2C6299ACC990006D5DB /* ContentView.swift in Sources */,
+				ABD6F23F299AC89B0006D5DB /* CustomNavView.swift in Sources */,
+				ABD6F241299AC89B0006D5DB /* CharacterRemoteDataSource.swift in Sources */,
+				ABD6F211299AC7BE0006D5DB /* Rick_MortyAppApp.swift in Sources */,
+				ABD6F246299AC89B0006D5DB /* CharacterRepositoryImpl.swift in Sources */,
+				ABD6F248299AC89B0006D5DB /* UseCaseContainer.swift in Sources */,
+				ABD6F242299AC89B0006D5DB /* CharacterRemoteDataSourceImpl.swift in Sources */,
+				ABD6F23E299AC89B0006D5DB /* CustomNavBarContainerView.swift in Sources */,
+				ABD6F243299AC89B0006D5DB /* NetworkContainer.swift in Sources */,
+				ABD6F244299AC89B0006D5DB /* CharactersListDto.swift in Sources */,
+				ABD6F240299AC89B0006D5DB /* CustomNavBarView.swift in Sources */,
+				ABD6F245299AC89B0006D5DB /* CharacterRepository.swift in Sources */,
+				ABD6F247299AC89B0006D5DB /* DataContainer.swift in Sources */,
+				ABD6F2C8299ACCBD0006D5DB /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABD6F219299AC7C00006D5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABD6F21A299AC7C00006D5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABD6F21C299AC7C00006D5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rick&MortyApp/Preview Content\"";
+				DEVELOPMENT_TEAM = GP43AP3684;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.troop.app.Rick-MortyApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABD6F21D299AC7C00006D5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rick&MortyApp/Preview Content\"";
+				DEVELOPMENT_TEAM = GP43AP3684;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.troop.app.Rick-MortyApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABD6F208299AC7BE0006D5DB /* Build configuration list for PBXProject "Rick&MortyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD6F219299AC7C00006D5DB /* Debug */,
+				ABD6F21A299AC7C00006D5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD6F21B299AC7C00006D5DB /* Build configuration list for PBXNativeTarget "Rick&MortyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD6F21C299AC7C00006D5DB /* Debug */,
+				ABD6F21D299AC7C00006D5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABD6F21E299AC8220006D5DB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		ABD6F221299AC84F0006D5DB /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABD6F21F299AC8220006D5DB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABD6F21E299AC8220006D5DB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		ABD6F222299AC84F0006D5DB /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABD6F221299AC84F0006D5DB /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ABD6F205299AC7BE0006D5DB /* Project object */;
+}
